@@ -1,0 +1,1452 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body{
+    background-color: rgb(250, 250, 250);
+    /* font-family: "Poppins", serif; */
+}
+
+/* common class */
+
+.container{
+    max-width: 1510px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.section_padding{
+    padding-left: 190px;
+    padding-right: 190px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    margin-top: 15px;
+    background: rgb(0, 0, 0);
+    color: white;
+    text-decoration: none;
+    font-family: "Poppins", serif;
+    /* border-radius: 5px; */
+}
+
+#btn_btn{
+    display: inline-block;
+    padding: 10px 20px;
+    margin-top: 15px;
+    background: white;
+    color:  rgb(0, 0, 0);
+    text-decoration: none;
+    /* font-size: 10px; */
+    font-family: "Poppins", serif;
+}
+
+#btn_btn:hover{
+    background-color: rgb(0, 0, 0);
+    color: rgb(164, 222, 16);
+    text-decoration: underline;
+}
+
+
+.btn:hover{
+    background-color: rgb(12, 66, 110);
+    color: greenyellow;
+    text-decoration: underline;
+}
+
+span{
+    color: rgb(23, 81, 132);
+}
+
+/* common attribute */
+
+ul{
+    list-style: none;
+}
+
+img{
+    min-width: 100%;
+    height:340px;
+    object-fit: cover;
+}
+
+h1{
+    font-size: 45px;
+    font-family: "Poppins", serif;
+    margin-top: 20px;
+    color: rgb(6, 6, 6);
+}
+
+h2{
+    text-align: center;
+    padding: 50px 0;
+    font-family: "Poppins", serif;
+}
+
+h3{
+    margin: 15px 0;
+    font-family: "Poppins", serif;
+}
+
+/* h4{
+
+} */
+
+p{
+    margin: 20px 0;
+    font-family: "Poppins", serif;
+    font-size: 12px;
+    color: rgb(6, 6, 6);
+} 
+
+/* header */
+
+nav{
+    padding:40px 50px;
+    background-color: rgb(12, 66, 110);
+}
+
+.main{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navLinks ul{
+    /* background-color: brown; */
+    display: flex;
+    justify-content: space-around;
+    /* width: 1920px; */
+    /* height: 101px; */
+    /* margin: 20px; */
+    list-style: none;
+}
+
+.navLinks ul li{
+    /* background-color: aqua; */
+    margin:0 20px;
+    /* padding: 20px; */
+    font-size: 17px;
+    font-family: "Poppins", serif;
+    /* color: rgb(255, 255, 255); */
+}
+
+/* .navLinks ul li:hover{
+    color: orangered;
+    text-decoration: underline;
+} */
+
+.navLinks ul li a{
+    list-style: none;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+
+.navLinks ul li a:hover{
+    color: orangered;
+    text-decoration: underline;
+}
+
+.logo_brand a{
+    font-size: 25px;
+    text-decoration: none;
+    margin: 10px;
+    color: rgb(255, 255, 255);
+    font-size: 26px;
+    font-family: "Poppins", serif;
+}
+
+.logo_brand a:hover{
+    color: yellowgreen;
+    /* text-decoration: wavy; */
+}
+
+.nav_icons{
+    display: flex;
+    align-items: center;
+}
+
+.nav_icons a i{
+    margin: 10px;
+    text-decoration: none;
+    color: white;
+}
+
+.menu-toggle{
+    display: none;
+    background: none;
+    border: none;
+    font-size: 24px;
+    color: white;
+    cursor: pointer;
+}
+
+
+
+/* first-section */
+
+/* .firstSection{
+    width: 100%;
+}
+
+.welcome_notes{
+    padding: 100px 205px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.welcome_notes .flexWork{
+    max-width: 100%;
+}
+
+.opening h1{
+    font-size: 48px;
+    font-weight: 700;
+    color: rgb(6, 6, 6);
+}
+
+.opening p{
+    font-size: 16px;
+    color: rgb(50, 50, 50);
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.opening button{
+    display: inline-block;
+    margin-top: 10px;
+}
+
+.image{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.photo img{
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+}
+
+.icons{
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.icons i{
+    font-size: 24px;
+    margin: 0 5px;
+    cursor: pointer;
+} */
+
+.welcome_notes{
+    padding: 122px 205px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.welcome_notes .flexWork{
+    flex: 1;
+    max-width: 50%;
+}
+
+.image{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.carribian_blue{
+    width: 120px;
+    height: 40px;
+    background-color: rgb(12, 66, 110);
+    font-family: "Poppins", serif;
+    font-size: 15px;
+    color: rgb(250, 250, 250);
+    margin-right: 8px;
+    border: none;
+}
+
+.carribian_blue:hover{
+    color: orange;
+    background-color: rgb(18, 73, 18);
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.black{
+    width: 120px;
+    height: 40px;
+    background-color: rgb(37, 37, 37);
+    font-family: "Poppins", serif;
+    font-size: 15px;
+    color: rgb(250, 250, 250);
+    margin-left: 8px;
+    border: none;
+}
+
+.black:hover{
+    color: rgb(23, 81, 132);
+    background-color: rgb(227, 227, 61);
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+i{
+    margin-left: 50px;
+    margin-top: 4px;
+    margin-bottom: 4px;
+    height: 20px;
+    color: rgb(6, 6, 6);
+}
+
+/* services section */
+
+/* .services {
+    text-align: center;
+    padding: 50px 0;
+} */
+
+.service-list{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.service{
+    width: 30%;
+    background: white;
+    padding: 15px;
+    border-radius: 2px;
+    text-align: center;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.service img{
+    max-width: 100%;
+    border-radius: 2px;
+}
+
+/* .service h3 {
+    margin: 15px 0;
+} */
+
+/* quality-service section */
+
+/* Quality Service Section */
+
+.quality-service{
+    text-align: center;
+    padding: 80px 0;
+}
+
+/* .quality-service h2{
+    font-size: 40px;
+    margin-bottom: 20px;
+} */
+
+.quality-content{
+    position: relative;
+    background: url('./images/Layer\ 7.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 100px 0;
+    text-align: center;
+    color: white;
+    /* max-width: 900px; */
+    margin: 0 auto;
+}
+
+/* .quality-content h3{
+    font-size: 28px;
+    margin-bottom: 15px;
+}
+
+.quality-content p{
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+} */
+
+
+/* .quality-service::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 50, 0.5);     
+} */
+
+/* .quality-service .container {
+    position: relative;
+    z-index: 2;
+} */
+
+/* .quality-service h2 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: black; Ensuring contrast
+    margin-bottom: 20px;
+} */
+
+/* .quality-content{
+    width: 100%;
+    position: relative;
+    background: url('../images/Layer\ 7.png') no-repeat center center/cover;
+    padding: 100px 0;
+    text-align: center;
+    color: white;
+    max-width: 800px;
+    margin: auto;
+} */
+
+/* .quality-content h3 {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+} */
+
+/* .quality-content p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin-bottom: 20px;
+} */
+
+/* .btn {
+    display: inline-block;
+    background: white;
+    color: black;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: 0.3s;
+} */
+
+/* .btn:hover {
+    background: black;
+    color: white;
+} */
+
+/* Why Choose Us Section */
+
+/* .why-choose-us {
+    padding: 80px 0;
+    text-align: center;
+    background: #f8f8f8;
+} */
+
+/* .why-choose-us h2 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 40px;
+} */
+
+/* .why-choose-us h2 span {
+    color: #0a2955; 
+} */
+
+.features{
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.feature-box{
+    background: white;
+    padding: 30px;
+    border-radius: 2px;
+    width: 30%;
+    text-align: left;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: 0.3s;
+    /* position: relative; */
+    /* font-family: "Poppins", serif; */
+}
+
+.feature-box:hover{
+    transform: translateY(-5px);
+}
+
+.feature-number{
+    /* font-size: 1.2rem; */
+    /* font-weight: bold; */
+    /* border: 2px solid black; */
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 5px 0;
+    /* border-radius: 50%; */
+    margin-bottom: 10px;
+    /* text-align: left; */
+    /* position: absolute;
+    left: 5px;
+    top: 1px; */
+    /* font-family: "Poppins", serif; */
+}
+
+.style{
+    color: rgb(12, 66, 110);
+}
+
+.stylee #brdr{
+    color: rgb(255, 255, 255);
+}
+
+.para p{
+    /* font-family: "Poppins", serif; */
+    /* position: absolute;
+    left: 3px; */
+    color: black;
+}
+
+.paragraph{
+    color: rgb(255, 255, 255);
+}
+
+.border{
+    border: 2px solid black;
+    border-radius: 50%;
+    padding: 10px;
+}
+
+.border_clr{
+    border: 2px solid rgb(12, 66, 110);
+}
+
+.border-color{
+    border: 2px solid rgb(255, 255, 255);
+}
+
+/* .feature-box h3 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+} */
+
+/* .feature-box p {
+    font-size: 1rem;
+    line-height: 1.6;
+} */
+
+/* Middle Box Styling */
+.feature-box.highlight{
+    background: #0a2955; /* Blue background */
+    color: white;
+}
+
+.feature-box.highlight .feature-number{
+    border-color: white;
+}
+
+/* testimonial-section */
+
+.testimonial-slider{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    max-width: 900px;
+    margin: auto;
+    /* position: relative; */
+}
+
+.testimonial{
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    text-align: left;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    position: relative;
+    /* transform: translate(-25px, 70px); */
+    /* align-items: center; */
+}
+
+.test-footer{
+    position: absolute;
+    bottom: 10px;
+    left: 130px;
+    transform: translateY(5px);
+    /* top: 10px; */
+}
+
+.span{
+    position: absolute;
+    transform: translate(5px, -20px);
+    font-family: "Poppins", serif;
+    font-size: 9px;
+}
+
+#left_circle_btn{
+    color: rgb(12, 12, 12);
+    font-size: 30px;
+    /* margin-right: 1px; */
+}
+
+#rght_circle_btn{
+    color: rgb(12, 66, 110);
+    font-size: 30px;
+    /* margin-left: 30px; */
+}
+
+/* #left_circle_btn, #rght_circle_btn:hover{
+    cursor: pointer;
+    background-color: aquamarine;
+} */
+
+/* .test-footer .margin-top{
+    margin-top: 20px;
+} */
+
+/* .testimonial img{
+    width: 10%;
+    height: 10%;
+    border-radius: 50%;
+    margin-bottom: 15px;
+} */
+
+.custmr{
+    min-width: 10%;
+    max-height: 90px;
+    object-fit: cover;
+    margin-right: 30px;
+}
+
+/* footer-section */
+
+.footer{
+    background: rgb(37, 37, 37);
+    color: white;
+    padding: 50px 0;
+    font-family: "Poppins", serif;
+    margin-top: 150px;
+}
+
+.footer-content{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    align-content: center;
+    gap: 20px;
+}
+
+.contact i{
+    margin-right: 10px;
+    color: rgb(155, 155, 155);
+}
+
+/* .footer-section{
+    flex: 1;
+    min-width: 200px;
+} */
+
+.footer-section p,
+.footer-section a{
+    font-size: 0.9rem;
+    color: rgb(155, 155, 155);
+    text-decoration: none;
+}
+
+.footer-section a:hover{
+    color: rgb(255, 255, 255);
+    text-decoration: underline;
+}
+
+.footer-section ul{
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section ul li{
+    margin-bottom: 10px;
+}
+
+/* .footer_form{
+    display: inline-block;
+} */
+
+.newsletter input{
+    width: 100%;
+    padding: 10px;
+    border: none;
+    margin-bottom: 10px;
+}
+
+.newsletter button{
+    background-color: rgb(12, 66, 110);
+    color: rgb(255, 255, 255);
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    /* font-size: 1rem; */
+}
+
+.newsletter button:hover{
+    background-color: rgba(155, 155, 155, 0.566);
+    color: rgb(185, 223, 127);
+}
+
+.margin_left{
+    margin-left: auto;
+}
+
+/* footer-bottom */
+
+.footer-bottom{
+    margin-top: 30px;
+    margin-left: auto;
+    border-top: 1px solid #222;
+    padding-top: 20px;
+    text-align: center;
+}
+
+.footer-bottom p{
+    margin-bottom: 10px;
+    color: rgb(255, 255, 255);
+    /* font-size: 0.8rem; */
+}
+
+.social-icons i{
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    padding: 20px 16px;
+    border-radius: 50%;
+    font-size: 12px;
+    cursor: pointer;
+    transition: 0.3s;
+    /* color: rgb(255, 255, 255); */
+    /* font-size: 1.2rem; */
+    margin: 0 10px;
+    /* transition: 0.3s; */
+}
+
+.social-icons i:hover{
+    background-color: rgb(23, 81, 132);
+    color: rgb(255, 255, 255);
+}
+
+
+@media screen and (max-width: 1199px){
+    /* nav-section */
+    nav{
+        padding: 20px 40px;
+    }
+    .navLinks ul li{
+        margin: 0 15px;
+    }
+    .navLinks ul li a{
+        font-size: 16px;
+    }
+
+    /* first-section */
+    .welcome_notes{
+        padding: 80px 120px;
+        /* display: flex;
+        justify-content: space-between; */
+        /* align-items: center; */
+    }
+
+    
+    .welcome_notes .flexWork h1{
+        font-size: 38px;
+    }
+
+    .carribian_blue, .black{
+        width: 110px;
+        height: 38px;
+        font-size: 14px;
+    }
+
+    /* our services */
+    /* .service-list {
+        display: flex;
+        justify-content: space-around;
+    } */
+
+    .section_padding{
+        padding-left: 90px;
+        padding-right: 90px;
+    }
+    
+    .service{
+        width: 30%;
+        background: white;
+        padding: 15px;
+        border-radius: 2px;
+        text-align: center;
+    }
+    
+    .service img{
+        max-width: 100%;
+        border-radius: 2px;
+    }
+
+    /* quality-service */
+
+    .quality-content{
+        padding: 80px 40px;
+    }
+
+    /* testimonial */
+
+    .testimonial-slider{
+        max-width: 800px;
+    }
+
+    .testimonial{
+        padding: 25px;
+        gap: 15px;
+    }
+
+    /* footer */
+
+    .footer-section{
+        width: 30%;
+    }
+}
+@media screen and (max-width: 991px){
+    /* navbar */
+    nav{
+        padding: 15px 30px;
+    }
+
+    .navLinks ul li{
+        margin:0 12px;
+        /* padding: 20px; */
+        font-size: 15px;
+        font-family: "Poppins", serif;
+        color: rgb(255, 255, 255);
+    }
+
+    .navLinks ul li a{
+        font-size: 15px;
+    }
+
+    .logo_brand a{
+        /* font-size: 15px; */
+        text-decoration: none;
+        margin: 5px;
+        color: rgb(255, 255, 255);
+        font-size: 20px;
+        font-family: "Poppins", serif;
+    }
+
+    .nav_icons a i{
+        margin: 15px;
+        text-decoration: none;
+        color: white;
+        font-size: 8px;
+    }
+
+    /* first-section */
+    .welcome_notes{
+        padding: 60px 80px;
+        flex-direction: column;
+        text-align: center;
+        /* display: flex;
+        justify-content: space-between; */
+        /* align-items: center; */
+    }
+
+    .image{
+        max-width: 80%;
+    }
+    
+    .welcome_notes .flexWork{
+        max-width: 100%;
+        margin-bottom: 20px;
+    }
+
+    /* our services */
+    /* .section_padding{
+        padding-left: 70px;
+        padding-right: 70px;
+    } */
+
+    .service-list{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .service{
+        width: 45%;
+        /* background: white;
+        padding: 15px;
+        border-radius: 2px;
+        text-align: center; */
+    }
+    
+    /* .service img {
+        max-width: 100%;
+        border-radius: 2px;
+    } */
+
+    /* quality-service */
+
+    .quality-content{
+        padding: 70px 30px;
+    }
+
+    .quality-service h2{
+        font-size: 22px;
+    }
+
+    .quality-content h3{
+        font-size: 15px;
+    }
+
+    .quality-content p{
+        font-size: 12px;
+    }
+
+    /* why-choose-us */
+
+    .features{
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    .feature-box{
+        width: 45%;
+    }
+
+    /* testimonial */
+
+    .testimonial-slider{
+        max-width: 700px;
+        flex-wrap: wrap;
+    }
+
+    .testimonial{
+        flex-direction: column;
+        text-align: center;
+        padding: 20px;
+    }
+
+    .custmr{
+        margin: 0 auto 15px;
+    }
+
+    .test-footer{
+        position: static;
+        transform: none;
+        text-align: center;
+    }
+
+    /* footer */
+
+    .footer-content{
+        flex-wrap: wrap;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .footer-section{
+        width: 45%;
+        margin-bottom: 20px;
+    }
+}
+
+@media screen and (max-width: 767px){
+    /* navbar */
+    .navLinks{
+        display: none;
+        position: absolute;
+        top: 70px;
+        left: 0;
+        width: 100%;
+        background: rgb(12, 66, 110);
+        text-align: center;
+        padding: 10px 0;
+    }
+    .navLinks ul{
+        display: block;
+    }
+    .navLinks ul li{
+        margin: 10px 0;
+    }
+    .menu-toggle{
+        display: block;
+    }
+    .navLinks.active{
+        display: block;
+    }
+
+    /* first-section */
+    .welcome_notes{
+        padding: 40px 40px;
+        /* display: flex;
+        justify-content: space-between; */
+        /* align-items: center; */
+    }
+
+    .welcome_notes .flexWork h1{
+        /* max-width: 552px; */
+        font-size: 32px;
+    }
+
+    .carribian_blue, .black{
+        width: 100px;
+        height: 34px;
+        font-size: 13px;
+    }
+
+    /* our services */
+
+    /* .section_padding{
+        padding-left: 50px;
+        padding-right: 50px;
+    } */
+
+    .service{
+        width: 80%;
+        /* background: white;
+        padding: 15px;
+        border-radius: 2px;
+        text-align: center; */
+    }
+
+    .service-list{
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    /* quality-service */
+
+    .quality-content{
+        padding: 60px 20px;
+    }
+
+    .quality-service h2{
+        font-size: 22px;
+    }
+
+    .quality-content h3{
+        font-size: 15px;
+    }
+
+    .quality-content p{
+        font-size: 12px;
+    }
+
+    #btn_btn{
+        font-size: 14px;
+        padding: 10px 20px;
+    }
+
+    /* why-choose-us */
+
+    .features{
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .feature-box{
+        width: 80%;
+    }
+
+    /* testimonial */
+
+    .testimonial-slider{
+        max-width: 90%;
+    }
+
+    .testimonial{
+        padding: 20px;
+        gap: 10px;
+    }
+
+    #left_circle_btn,
+    #rght_circle_btn{
+        font-size: 25px;
+    }
+
+    /* footer */
+
+    .footer-content{
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+    }
+
+    .footer-section{
+        width: 100%;
+    }
+
+    .newsletter input{
+        width: 80%;
+        margin: auto;
+    }
+}
+
+@media screen and (max-width: 565px){
+    /* common-class */
+
+    /* .container{
+        max-width: 1510px;
+        width: 100%;
+        margin: 0 auto;
+        padding: 0 15px;
+    }
+    
+    .section_padding{
+        padding-left: 60px;
+        padding-right: 60px;
+    } */
+
+    /* navbar */
+    nav{
+        display: flex;
+        padding: 15px;
+        flex-wrap: wrap;
+    }
+    .logo_brand a{
+        font-size: 22px;
+    }
+    .nav_icons a i{
+        font-size: 16px;
+    }
+    .menu-toggle{
+        font-size: 22px;
+    }
+
+    /* first-section */
+    .welcome_notes{
+        padding: 30px;
+
+        /* flex-direction: column;
+        align-items: start; */
+        /* display: flex;
+        justify-content: space-between; */
+        /* align-items: center; */
+    }
+
+    .welcome_notes .flexWork h1{
+        /* max-width: 552px; */
+        font-size: 28px;
+    }
+
+    .carribian_blue, .black{
+        width: 90px;
+        height: 34px;
+        font-size: 12px;
+    }
+   
+    .image{
+        max-width: 100%;
+    }
+
+
+    /* i{
+        margin-left: 30px;
+        margin-top: 4px;
+        margin-bottom: 4px;
+        height: 12px;
+        color: rgb(6, 6, 6);
+    } */
+
+    /* our services */
+    /* .section_padding{
+        padding-left: 50px;
+        padding-right: 50px;
+    } */
+
+    /* .container{
+        max-width: 1510px;
+        width: 100%;
+        margin: 0 auto;
+        padding: 0 15px;
+    } */
+
+    .service{
+        width: 90%;
+        /* background: white;
+        padding: 15px;
+        border-radius: 2px;
+        text-align: center; */
+    }
+    
+    .service img{
+        max-width: 100%;
+        height: auto;
+        border-radius: 2px;
+        object-fit: cover;
+    }
+
+    .btn{
+        display: inline-block;
+        padding: 8px 18px;
+        font-size: 10px;
+        margin-top: 10px;
+        background: rgb(0, 0, 0);
+        color: white;
+        text-decoration: none;
+        font-family: "Poppins", serif;
+        /* border-radius: 5px; */
+    }
+
+    /* quality-service */
+
+    .quality-content{
+        padding: 50px 15px;
+    }
+
+    .quality-service h2{
+        font-size: 28px;
+    }
+
+    .quality-content h3{
+        font-size: 22px;
+    }
+
+    .quality-content p{
+        font-size: 13px;
+    }
+
+    #btn_btn{
+        font-size: 13px;
+        padding: 8px 18px;
+    }
+
+    /* why-choose-us */
+
+    .feature-box{
+        width: 90%;
+    }
+
+    .feature-number{
+        display: flex;
+        flex-wrap: wrap;
+        font-size: 15px;
+    }
+
+    /* testimonial */
+
+    .testimonial-slider{
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .testimonial{
+        width: 95%;
+        padding: 15px;
+    }
+
+    #left_circle_btn,
+    #rght_circle_btn{
+        font-size: 22px;
+    }
+
+    /* footer */
+
+    .footer{
+        padding: 40px 0;
+    }
+
+    .newsletter input,
+    .newsletter button{
+        width: 90%;
+    }
+
+    .social-icons a i{
+        font-size: 18px;
+    }
+}
+
+@media screen and (max-width: 320px){
+    /* navbar */
+    /* header{
+        flex-wrap: wrap;
+    } */
+
+    nav{
+        padding: 12px;
+        flex-wrap: wrap;
+    }
+
+    .logo_brand a {
+        font-size: 20px;
+    }
+    .menu-toggle {
+        font-size: 20px;
+    }
+    /* first-section */
+    .welcome_notes{
+        padding: 20px;
+        /* flex-direction: column;
+        align-items: center; */
+        /* display: flex;
+        justify-content: space-between; */
+        /* align-items: center; */
+    }
+
+    .welcome_notes .flexWork h1{
+        /* max-width: 552px; */
+        font-size: 24px;
+    }
+
+    .carribian_blue, .black{
+        width: 80px;
+        height: 30px;
+        font-size: 11px;
+    }
+   
+
+    /* i{
+        margin-left: 30px;
+        margin-top: 4px;
+        margin-bottom: 4px;
+        height: 12px;
+        color: rgb(6, 6, 6);
+    } */
+
+    /* our services */
+    
+
+    
+
+    /* .container{
+        max-width: 1510px;
+        width: 100%;
+        margin: 0 auto;
+        padding: 0 15px;
+    } */
+
+    .service {
+        width: 95%;
+        /* background: white;
+        padding: 15px;
+        border-radius: 2px;
+        text-align: center; */
+    }
+    
+    .service h3{
+        font-size: 18px;
+    }
+
+    .service p{
+        font-size: 14px;
+    }
+
+    /* .service img {
+        max-width: 100%;
+        max-height: 100%;
+        border-radius: 2px;
+        object-fit: cover;
+    } */
+
+    .btn {
+        /* display: inline-block; */
+        padding: 8px 16px;
+        font-size: 14px;
+        /* margin-top: 10px;
+        background: rgb(0, 0, 0);
+        color: white;
+        text-decoration: none;
+        font-family: "Poppins", serif; */
+        /* border-radius: 5px; */
+    }
+
+    /* quality-service */
+
+    .quality-content{
+        padding: 40px 10px;
+    }
+
+    .quality-service h2{
+        font-size: 24px;
+    }
+
+    .quality-content h3{
+        font-size: 20px;
+    }
+
+    .quality-content p{
+        font-size: 12px;
+    }
+
+    #btn_btn{
+        font-size: 12px;
+        padding: 6px 16px;
+    }
+
+    /* why-choose-us */
+
+    .feature-box{
+        width: 95%;
+        padding: 20px;
+    }
+
+    .feature-box h3{
+        font-size: 18px;
+    }
+
+    .feature-box p{
+        font-size: 14px;
+    }
+
+    /* testimonial */
+
+    .testimonial{
+        padding: 10px;
+    }
+
+    .testimonial p{
+        font-size: 14px;
+    }
+
+    #left_circle_btn,
+    #rght_circle_btn{
+        font-size: 20px;
+    }
+
+    /* footer */
+
+    .footer{
+        padding: 30px 0;
+    }
+
+    .footer-section h3{
+        font-size: 16px;
+    }
+
+    .footer-section p,
+    .footer-section a{
+        font-size: 0.8rem;
+    }
+
+    .newsletter input,
+    .newsletter button{
+        font-size: 14px;
+    }
+
+    .social-icons a i{
+        font-size: 16px;
+    }
+}
+
+
+
